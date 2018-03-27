@@ -7,6 +7,7 @@ import renderField from './renderField';
 import { Button } from 'react-bootstrap';
 
 const alphabetsOnlyRe = /^[a-zA-Z]*$/;
+
 const validate = values => {
   const errors = {};
   if (!values.firstname) {
@@ -47,14 +48,12 @@ async function submitToServer(values) {
 }
 
 const submit = values => {
-  //window.alert(`You submitted:\n\n${JSON.stringify(values, null, 2)}`)
   return submitToServer(values).then(data => {
     if (data.message) {
       throw new SubmissionError({ iban: data.message });
     } else if (!data.valid) {
       throw new SubmissionError({ iban: 'IBAN should be valid' });
     } else {
-      //window.alert(`You submitted:\n\n${JSON.stringify(values, null, 2)}`)
       toast.success('Congratz! All data is valid', {
         position: toast.POSITION.TOP_CENTER
       });

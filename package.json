@@ -12,7 +12,6 @@
     "react": "^16.2.0",
     "react-bootstrap": "^0.32.1",
     "react-dom": "^16.2.0",
-    "react-foundation": "^0.9.4",
     "react-redux": "^5.0.6",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
@@ -21,9 +20,7 @@
     "redux": "^3.7.2",
     "redux-devtools-extension": "^2.13.2",
     "redux-form": "^7.3.0",
-    "redux-observable": "^0.18.0",
     "redux-thunk": "^2.2.0",
-    "rxjs": "^5.5.8",
     "sanitize.css": "^5.0.0"
   },
   "scripts": {

@@ -1,0 +1,48 @@
+html {
+  font-size: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial,
+    sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  background: #f0f0f0;
+}
+
+button:disabled {
+  opacity: 0.5;
+}
+
+.outer-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.inner-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 15px;
+}
+
+.inner-container {
+  padding: 50px;
+  background: #ffffff;
+}
+
+input {
+  height: 45px !important;
+  box-shadow: none !important;
+}
+
+button {
+  float: right;
+  margin-right: 10px;
+}
+
+span {
+  color: red;
+}
